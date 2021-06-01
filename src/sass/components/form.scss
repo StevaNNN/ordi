@@ -1,0 +1,111 @@
+.form-field-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    &.two {
+
+        @media screen and (min-width: 601px) {
+            flex-direction: row;
+        }
+
+        .form-field {
+            &:not(:last-of-type) {
+                margin-right: $page-spacing;
+                max-width: calc(50% - #{$page-spacing});
+
+                @media screen and (max-width: 600px) {
+                    max-width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 4rem;
+    }
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50px;
+
+    label {
+        padding-left: 1.6rem;
+        color: #164a9d;
+        font-family: $font-family-semibold;
+    }
+}
+
+input,
+textarea {
+    border-radius: 1.6rem;
+    background: rgb(242, 245, 250);
+    border: 2px solid transparent;
+    padding: 1rem 2rem;
+    outline: none;
+    resize: none;
+    color: #557dbd;
+    transition: all 200ms ease-in-out;
+
+    &:focus,
+    &:hover {
+        border-color: #164a9d;
+        background: transparent;
+    }
+
+    &[type="checkbox"] {
+        cursor: pointer;
+        width: 1.6rem;
+        height: 1.6rem;
+        appearance: none;
+        border-radius: .2rem;
+        background-color: #f2f5fa;
+        position: relative;
+        outline: none;
+        border: 1px solid transparent;
+
+        &:hover,
+        &:focus {
+            border: 1px solid #164a9d;
+        }
+
+        &::before {
+            width: 6px;
+            height: 2px;
+            background-color: #164a9d;
+            position: absolute;
+            left: 1px;
+            bottom: 4px;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            width: 2px;
+            height: 10px;
+            background-color: #164a9d;
+            position: absolute;
+            right: 4px;
+            bottom: 2px;
+            transform: rotate(45deg);
+        }
+
+        &:checked {
+
+            &::before,
+            &::after {
+                content: '';
+            }
+        }
+    }
+}
+
+form {
+    width: 100%;
+    padding: $page-spacing;
+}

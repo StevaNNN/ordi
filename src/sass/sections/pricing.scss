@@ -1,0 +1,87 @@
+.section.pricing {
+    background: linear-gradient(45deg, rgba(157,101,153,1) 0%, rgba(58,108,154,1) 97%);
+    color: $white;
+    padding: 15rem 0 $header-height;
+
+    .inner-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: ($page-spacing * 2) 0;
+        width: 100%;
+    }
+
+    .left-side,
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50rem;
+        width: 100%;
+        padding: 2.4rem;
+    }
+
+    .left-side {
+        @media screen and (max-width: 1048px) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    h1 {
+        font-size: 6.8rem;
+        line-height: 7.6rem;
+        font-family: $font-family-bold;
+        margin: 0;
+
+        @media screen and (min-width: 1601px) {
+            max-width: 80%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 7.8rem;
+            line-height: 8.6rem;
+        }
+
+        @media screen and (max-width: 1123px) {
+            max-width: 100%;
+            font-size: 7rem;
+        }
+
+        @media screen and (max-width: 1048px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 992px) {
+            font-size: 6.8rem;
+            line-height: 7.6rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 4.4rem;
+            line-height: 5.6rem;
+        }
+    }
+
+    h3 {
+        font-size: $font-size-l;
+
+        @media screen and (max-width: 600px) {
+            font-size: $font-size-m;
+        }
+
+        @media screen and (max-width: 1048px) {
+            text-align: center;
+        }
+    }
+
+    .form-wrap {
+        color: $body-color;
+        border-radius: 0 8rem 0 8rem;
+        background: $white;
+        box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12); // 24 dept
+
+        form {
+            padding: 4.4rem;
+        }
+    }
+}

@@ -1,0 +1,204 @@
+@keyframes slide-down {
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
+
+@keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+.section {
+
+    &.intro,
+    &.pricing {
+
+        .left-side,
+        .right-side {
+            transition: transform 400ms cubic-bezier(0, .47, 1, .48) 400ms,
+                        visibility 400ms cubic-bezier(0, .47, 1, .48) 500ms,
+                        opacity 400ms cubic-bezier(0, .47, 1, .48) 600ms;
+        }
+
+        .left-side {
+            transform: translateX(-100%);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .right-side {
+            transform: translateX(100%);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &.in-view {
+
+            .left-side {
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .right-side {
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.service {
+
+        .card {
+
+            &:nth-of-type(odd) {
+                transform: translateX(-100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &:nth-of-type(even) {
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        &.in-view {
+
+            .card {
+                transition: transform 400ms ease 400ms,
+                visibility 400ms ease 600ms,
+                box-shadow 200ms ease-in-out,
+                opacity 400ms ease 700ms;
+
+                &:nth-of-type(odd) {
+                    transform: translateX(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                &:nth-of-type(even) {
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    &.team {
+
+        .card {
+
+            &:nth-of-type(1),
+            &:nth-of-type(4) {
+                transform: translateX(-100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &:nth-of-type(3),
+            &:nth-of-type(5) {
+                transform: translateX(100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &:nth-of-type(2) {
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        &.in-view {
+
+            .card {
+                transition: transform 400ms ease 400ms,
+                visibility 400ms ease 500ms,
+                opacity 400ms ease 600ms;
+
+
+                &:nth-of-type(1),
+                &:nth-of-type(4) {
+                    transform: translateX(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                &:nth-of-type(3),
+                &:nth-of-type(5) {
+                    transform: translateX(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                &:nth-of-type(2) {
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+    }
+
+    &.contact {
+
+        .top,
+        .bottom {
+            transition: transform 400ms cubic-bezier(0, .47, 1, .48) 400ms,
+            visibility 400ms cubic-bezier(0, .47, 1, .48) 500ms,
+            opacity 400ms cubic-bezier(0, .47, 1, .48) 600ms;
+        }
+
+        .top {
+            transform: translateX(-100%);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .bottom {
+            transform: translateX(100%);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &.in-view {
+
+            .top {
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .bottom {
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

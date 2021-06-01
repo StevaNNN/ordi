@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 842px){
+        display: none;
+    }
+}
+
+.nav-item {
+    color: $white;
+    padding: 3.9rem $page-spacing;
+    cursor: pointer;
+    font-family: $font-family-bold;
+    text-transform: uppercase;
+    opacity: .85;
+    font-size: $font-size-m;
+    transition: opacity 200ms ease-in-out;
+    position: relative;
+    white-space: nowrap;
+
+    @media screen and (max-width: 905px){
+        font-size: $font-size;
+    }
+
+    &::after {
+        content: '';
+        bottom: .5rem;
+        height: 1rem;
+        position: absolute;
+        left: calc(50% - 3rem);
+        background: linear-gradient(45deg, $accent, white);
+        width: 0;
+        transition: width 200ms ease-in-out;
+    }
+
+    &:hover,
+    &.active {
+        opacity: 1;
+
+        &:after {
+            width: 6rem;
+        }
+    }
+}

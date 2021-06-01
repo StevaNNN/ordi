@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+        content="Ordi, ordi, ordi-app, ordiapp,ordering-app, ordering, restaruant-apps, caffe-shop-apps">
+  <meta name="application-name" content="OrdiApp">
+  <meta name="description"
+        content="Ordi je aplikacija namenjena ugostiteljskim objektima, radi lakše organizacije poslovanja.">
+  <meta property="og:image" content="favicon.png" />
+  <meta property="og:url" content="https://ordi-app.com/" />
+  <meta property="og:site_name" content="OrdiApp" />
+  <meta property="og:description"
+        content="Ordi je aplikacija namenjena ugostiteljskim objektima, radi lakše organizacije poslovanja" />
+  <link rel="preload" href="assets/fonts/logoFont.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-semibold.ttf" as="font" type="font/ttf" crossorigin>
+  <title>OrdiApp</title>
+  <style>
+    @font-face {
+      font-family: 'montserrat-regular';
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/montserrat-regular.ttf');
+    }
+
+    @font-face {
+      font-family: 'montserrat-semibold';
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/montserrat-semibold.ttf');
+    }
+
+    @font-face {
+      font-family: 'montserrat-bold';
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/montserrat-bold.ttf');
+    }
+
+    @font-face {
+      font-family: 'logo-font';
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/logoFont.otf');
+    }
+  </style>
+</head>
+<body>
+<header id="header" class="header">
+  <a href="/" style="text-decoration: none">
+    <div class="logo-wrap">
+      <span class="logo-icon"></span>
+      <span class="logo-text">RDI</span>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="nav">
+      <a class="nav-item active intro">POČETNA</a>
+      <a class="nav-item service">SERVISI</a>
+      <a class="nav-item pricing">PLATNI PLANOVI</a>
+      <a class="nav-item team">O NAMA</a>
+      <a class="nav-item contact">KONTAKT</a>
+    </div>
+    <div class="language-menu">
+      <span class="language"></span>
+      <ul class="dropdown-list">
+        <li class="dropdown-item">
+          <a href="/">SR (Srpski)</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="en.html">EN (English)</a>
+        </li>
+      </ul>
+    </div>
+    <a href="#navi" class="navi-trigger">
+            <span class="navi-icon">
+              <svg viewBox="0 0 800 600">
+                  <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                        id="top"></path>
+                  <path d="M300,320 L540,320" id="middle"></path>
+                  <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                        id="bottom"
+                        transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                </svg>
+            </span>
+    </a>
+  </div>
+</header>
+<aside class="sidemenu-wrap">
+  <ul class="sidemenu-list">
+    <li class="nav-item active intro sidemenu-list-item">
+      POČETNA
+    </li>
+    <li class="nav-item service sidemenu-list-item">
+      SERVISI
+    </li>
+    <li class="nav-item pricing sidemenu-list-item">
+      PLATNI PLANOVI
+    </li>
+    <li class="nav-item team sidemenu-list-item">
+      O NAMA
+    </li>
+    <li class="nav-item contact sidemenu-list-item">
+      KONTAKT
+    </li>
+  </ul>
+</aside>
+<section class="section intro" id="intro">
+  <div>
+    <div class="left-side">
+      <h1>Vaš digitalni konobar je tu!</h1>
+      <p>Aplikacija zbog koje će svaka vaša mušterija biti zadovoljna.</p>
+      <button class="btn get-started">Saznaj više</button>
+    </div>
+    <div class="right-side">
+      <div class="intro-pic"></div>
+    </div>
+    <div class="mouse-icon">
+      <div class="mouse-wheel"></div>
+    </div>
+  </div>
+</section>
+<section class="section service" id="service">
+  <div>
+    <div class="headline">
+      <h1>Naši Servisi</h1>
+      <p>Digitalizujte svoje poslovanje i odmaknite se korak dalje od konkurencije, tako što se ćete biti orijentisani
+        prema kupcima još više!</p>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="top">
+          <div class="card-headline">Zadovoljnije mušterije</div>
+          <div class="card-icon customers"></div>
+        </div>
+        <div class="middle">
+          Vaši kupci više neće čekati dugo na uslugu.
+          Naš sistem naručivanja je zasnovan u realnom vremenu i obavestiće osoblje u sekundi(uglavnom manje)!
+        </div>
+      </div>
+      <div class="card">
+        <div class="top">
+          <div class="card-headline">Zadovoljnije osoblje</div>
+          <div class="card-icon stuff"></div>
+        </div>
+        <div class="middle">
+          U restoranu ili kafiću koji koristi ORDI aplikaciju, osoblje je uvek povezano sa kupcem.
+          Na takav način aplikacija pomaže vašem osoblju da radi lagodnije kako bi imali pravi osmeh na svom licu!
+        </div>
+      </div>
+      <div class="card">
+        <div class="top">
+          <div class="card-headline">Monitoring poslovanja</div>
+          <div class="card-icon buissnies"></div>
+        </div>
+        <div class="middle">
+          Vlasnik poslovnog objekta može pristupiti izveštajima rada u trenu.
+          Jednostavno sedite u sofi i gledajte kako se novac zarađuje digitalno!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section pricing" id="pricing">
+  <div>
+    <div class="inner-wrap">
+      <div class="left-side">
+        <h1>Isprobajte besplatno</h1>
+        <h3>Unesite vašu e-mail adresu i počnite da koristite aplikaciju još danas!</h3>
+      </div>
+      <div class="right-side">
+        <div class="form-wrap">
+          <form id="register-company">
+            <div class="form-field-wrap">
+              <div class="form-field">
+                <label for="start">E-mail</label>
+                <input id="start" class="custom" type="email" />
+              </div>
+            </div>
+            <div class="form-field-wrap">
+              <div class="form-field">
+                <button type="submit" class="btn gradient">Pošalji zahtev</button>
+                <div class="flex justify-end align-center">
+                  <p class="font-size-sm text-right">Slažem se sa politikom privatnosti</p>
+                  <label style="line-height: 1">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section team" id="team">
+  <div>
+    <div>
+     <div class="headline" style="margin:0 auto">
+       <h1 style="text-align: center">Šta je <span class="accent-text font-bold">ORDI</span> i kome je namenjen?</h1>
+     </div>
+      <p class="font-semibold"><span class="accent-text font-size-m">ORDI</span> je aplikacija namenjena kako
+        restoranima
+        / kafićima koji žele da unaprede svoje poslovanje tako i mušterijama koje će se napokon lišiti glavnih pitanja
+        prilikom posete ugostiteljskog objekta:
+      </p>
+      <ol>
+        <li class="mb24"><i>"Hoćemo li napokon biti usluženi!?"</i></li>
+        <li class="mb24"><i>"Kada će konobar proći kako bih platio/la?"</i></li>
+        <li class="mb24"><i>"Nepregledan meni ko će se ovde snaći!"</i></li>
+        <li class="mb24"><i>"Kako to misle, nemaju u ponudi, zašto to nije negde istaknuto!"</i></li>
+      </ol>
+      <p class="font-semibold">
+        <span class="accent-text font-size-m">ORDI</span> to radi na više načina a mi ćemo se potrudi kako bi vam
+        ih objasnili. Pa da krenemo:
+      </p>
+      <ol>
+        <li class="mb24">Na svakom stolu ugostiteljskog objekta stoji pamflet sa jasnim naznakama gde i kako mušterija
+          može skinuti
+          aplikaciju sa Google Play prodavnice putem jednostavnog skeniranja QR koda. Nakon toga mušterija bira da li
+          želi da napravi nalog na aplikaciji ili jednostavno skenira QR kod koji se takodje nalazi na pamfletu
+          a za ulogu ima otvaranje personalizovanog menija ugostiteljskog objekta.
+        </li>
+        <li class="mb24">
+          Mušterija na svojoj mobilnoj aplikaciji poseduje opciju &nbsp;<i class="font-semibold">"Pozovi konobara"</i>&nbsp;
+          koja automatski signalnizira osoblju sa kog stola je zatraženo njihovo prisustvo.
+          Takodje pored opcije &nbsp;<i class="font-semibold">"Pozovi konobara"</i>&nbsp; tu su i opcije
+          &nbsp;<i class="font-semibold">"Plati karticom"</i>&nbsp; ili &nbsp;<i class="font-semibold">"Plati kešom"</i>&nbsp;
+          koje signaliziraju osoblju o načinu plaćanja koji je mušterija sa datog stola izabrala.
+        </li>
+        <li class="mb24">
+          Meni restorana bi uglavnom trebao biti ažuriran od strane osoblja i ukoliko se primeti nestanak nekog
+          artikla, osoblje poseduje opciju "Sakrij Artikal" koji će automatski izbrisati taj isti sa menija koji
+          mušterija gleda na svojoj mobilnoj aplikaciji. Jedan artikal u meniju sadrži izmedju ostalog ime, sliku,
+          opis, veličinu i naravno cenu, na taj način se mušterija unapred informiše o sadržaju željenog artikla
+          ili o eventualnim alergenima koje nosi.
+        </li>
+        <li>Naš sistem naručivanja radi u realnom vremenu tako da u momentu kada izaberete iz menija sta želite
+          da pojedete / popijete, osoblje dobija obaveštenje šta je naručeno i sa kog stola. Konobar potom
+          proverava sa šefom kuhinje i šankerom o stanju naručenih artikla, nakon toga obaveštava mušteriju
+          putem poruke da li je porudžbina odobrena ili odbijena.
+        </li>
+      </ol>
+    </div>
+    <div class="headline">
+      <h1>Upoznajte naš tim</h1>
+      <p>Zajedno naš tim ima preko 20 godina radnog iskustva, to je naš ponos i kao takvi težimo ka realizaciji naših
+        ideja, ORDI je jedna takva!</p>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="assets/img/vladimir.webp" alt="techa">
+        <div class="card-footer">
+          <div class="social-actions-bar">
+            <a href="https://www.facebook.com/wladarix.max" target="_blank" class="soc-icon fb"></a>
+            <a href="https://www.facebook.com/wladarix.max" target="_blank" class="soc-icon inst"></a>
+            <a href="https://www.linkedin.com/in/vladimir-dukic-14b5a2100/" target="_blank" class="soc-icon in"></a>
+          </div>
+          <h3>Vladimir Dukić</h3>
+          <p>Web Developer</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/nemanja.webp" alt="tihi">
+        <div class="card-footer">
+          <div class="social-actions-bar">
+            <a href="https://www.facebook.com/nemanja.radovanovic.31" target="_blank" class="soc-icon fb"></a>
+            <a href="https://www.instagram.com/nemanja.radovanovic92/" target="_blank" class="soc-icon inst"></a>
+            <a href="https://www.linkedin.com/in/nemanja-radovanovic-56191ba9/" target="_blank" class="soc-icon in"></a>
+          </div>
+          <h3>Nemanja Radovanović</h3>
+          <p>Backend && Web Developer</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/nikola2.webp" alt="zonsa">
+        <div class="card-footer">
+          <div class="social-actions-bar">
+            <a href="https://www.facebook.com/nikola.bojanovic.39" target="_blank" class="soc-icon fb"></a>
+            <a href="https://www.instagram.com/bojanovicnikola/" target="_blank" class="soc-icon inst"></a>
+            <a href="https://www.linkedin.com/in/nikolabojanovic/" target="_blank" class="soc-icon in"></a>
+          </div>
+          <h3>Nikola Bojanović</h3>
+          <p>Backend && Web Developer</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/nikola.webp" alt="dakice">
+        <div class="card-footer">
+          <div class="social-actions-bar">
+            <a href="https://www.facebook.com/dakicnikola" target="_blank" class="soc-icon fb"></a>
+            <a href="https://www.instagram.com/second.son_/" target="_blank" class="soc-icon inst"></a>
+            <a href="https://www.linkedin.com/in/dakicnikola/" target="_blank" class="soc-icon in"></a>
+          </div>
+          <h3>Nikola Dakić</h3>
+          <p>Web Developer</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/stevan.webp" alt="beast">
+        <div class="card-footer">
+          <div class="social-actions-bar">
+            <a target="_blank" href="https://www.facebook.com/stevan.stojanovic.96" class="soc-icon fb"></a>
+            <a href="https://www.instagram.com/sstojanovic1993/" class="soc-icon inst"></a>
+            <a href="https://www.linkedin.com/in/stevan-stojanovic-27337810a/" class="soc-icon in"></a>
+          </div>
+          <h3>Stevan Stojanović</h3>
+          <p>Frontend Developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section contact" id="contact">
+  <div class="top">
+    <div class="headline">
+      <h1>
+        <span>Želite više informacija?</span>
+        <span>Pišite nam</span>
+      </h1>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="form">
+      <form id="contact-form">
+        <div class="form-field-wrap two">
+          <div class="form-field">
+            <label for="name">Ime</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="lastName">Prezime</label>
+            <input type="text" id="lastName" />
+          </div>
+        </div>
+        <div class="form-field-wrap">
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" />
+          </div>
+        </div>
+        <div class="form-field-wrap">
+          <div class="form-field">
+            <label for="text">Poruka</label>
+            <textarea name="text" id="text" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+        <div>
+          <button class="btn block primary outline pbig" type="submit">Pošalji</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<div class="toast flex">
+  <span role="img" class="toast-icon"></span>
+  <div class="flex flex-column">
+    <span class="toast-header"></span>
+    <span class="toast-body"></span>
+  </div>
+</div>
+<footer class="footer">
+  <section class="footer-inner">
+    <div class="flex flex-wrap footer-section-wrapper align-start">
+      <div class="flex flex-column footer-section">
+        <span class="footer-section-title">PRATITE NAS</span>
+        <div class="social-actions-bar">
+          <a href="https://www.facebook.com/ordiapp/" target="_blank" class="soc-icon fb"></a>
+          <a href="https://www.instagram.com/OrdiApp2020/" target="_blank" class="soc-icon inst"></a>
+          <a href="https://www.linkedin.com/company/ordiappp/" target="_blank" class="soc-icon in"></a>
+        </div>
+      </div>
+      <div class="flex flex-column footer-section">
+        <span class="footer-section-title">KONTAKT</span>
+        <div class="font-size-m info">
+          <div class="flex pb24">
+            <span class="pr12">Telefon: </span>
+            <a href="tel:+381 60 3668 619">+381 60 3668 619</a>
+          </div>
+          <div class="flex">
+            <span class="pr12">E-mail: </span>
+            <a href="mailto:admin@ordi-app.com">admin@ordi-app.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="gp-wrap p24 flex justify-center">
+        <a target="_blank"
+           href="https://play.google.com/store/apps/details?id=com.petmusketara.ordi"
+           class="flex align-center googlePlay"
+        >
+          <span class="gp-icon"></span>
+          <div class="flex flex-column">
+            <span class="font-size-sm">NAĐITE NAS NA</span>
+            <span class="font-size-l font-bold">Google Play-u</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="flex-column flex align-center footer-section">
+      <div id="footerLogo" class="logo-wrap pb24">
+        <span class="logo-icon"></span>
+        <span class="logo-text">RDI</span>
+      </div>
+      <div class="footer-text">
+        ORDI © 2020, sva prava zadržana.
+        <a target="_blank" href="politika-privatnosti.html">Politika Privatnosti</a>
+      </div>
+    </div>
+  </section>
+</footer>
+</body>
+</html>

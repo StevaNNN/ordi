@@ -1,0 +1,23 @@
+body {
+
+    > section {
+        padding: $header-height $page-spacing $header-height;
+        display: flex;
+        justify-content: center;
+
+        > div {
+            max-width: 120rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+            width: 100%;
+        }
+
+        &.service,
+        &.team,
+        &.contact {
+            background-color: $white;
+        }
+    }
+}

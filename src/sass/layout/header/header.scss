@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $accent;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    padding: 0 $page-spacing;
+    max-height: $header-height;
+
+    .logo-wrap {
+        transform: translateY(-4px);
+        padding: $page-spacing 0;
+    }
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-left: $page-spacing;
+    flex: 1;
+
+    @media screen and (max-width: 842px){
+        justify-content: space-between;
+    }
+}

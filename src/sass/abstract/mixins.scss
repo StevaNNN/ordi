@@ -1,0 +1,62 @@
+//@mixin material-icons-mixin {
+//    @font-face {
+//        font-display: swap;
+//        font-family: '#{$icons-font-family}';
+//        font-style: normal;
+//        font-weight: normal;
+//        src: url('#{$fonts-path}#{$icons-font-family}.eot'),
+//        url('#{$fonts-path}#{$icons-font-family}.ttf') format('truetype'),
+//        url('#{$fonts-path}#{$icons-font-family}.woff') format('woff'),
+//        url('#{$fonts-path}#{$icons-font-family}.svg?##{$icons-font-family}') format('svg');
+//    }
+//
+//    .icon {
+//        font-family: $icons-font-family;
+//        font-weight: normal;
+//        font-style: normal;
+//        font-size: $icons-font-size;
+//        display: inline-block;
+//        line-height: 1;
+//        text-transform: none;
+//        letter-spacing: normal;
+//        word-wrap: normal;
+//        white-space: nowrap;
+//        direction: ltr;
+//        -webkit-font-smoothing: antialiased;
+//        text-rendering: optimizeLegibility;
+//        -moz-osx-font-smoothing: grayscale;
+//        font-feature-settings: 'liga';
+//    }
+//}
+
+@mixin font-mixin {
+    @font-face {
+        font-family: $font-family;
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        src: url('#{$fonts-path}montserrat-regular.ttf');
+    }
+    @font-face {
+        font-family: $font-family-semibold;
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        src: url('#{$fonts-path}montserrat-semibold.ttf');
+    }
+
+    @font-face {
+        font-family: $font-family-bold;
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        src: url('#{$fonts-path}montserrat-bold.ttf');
+    }
+    @font-face {
+        font-family: $logo-font-family;
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        src: url('#{$fonts-path}logoFont.otf');
+    }
+}

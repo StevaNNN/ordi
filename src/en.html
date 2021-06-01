@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ordi, ordi, ordi-app, ordiapp,ordering-app, ordering, restaruant-apps, caffe-shop-apps">
+    <meta name="application-name" content="OrdiApp">
+    <meta name="description" content="Ordi is an application dedicated to help hospitality facilities to organize their work and be closer to customers.">
+    <meta property="og:image" content="favicon.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ordi-app.com/" />
+    <meta property="og:site_name" content="OrdiApp" />
+    <meta property="og:description" content="Ordi je aplikacija namenjena ugostiteljskim objektima, radi lakše organizacije poslovanja" />
+    <link rel="preload" href="assets/fonts/logoFont.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-semibold.ttf" as="font" type="font/ttf" crossorigin>
+    <title>OrdiApp</title>
+    <style>
+        @font-face {  font-family: 'montserrat-regular';  font-display: swap;  font-style: normal;  font-weight: 400;  src: url('assets/fonts/montserrat-regular.ttf');  }
+        @font-face {  font-family: 'montserrat-semibold';  font-display: swap;  font-style: normal;  font-weight: 400;  src: url('assets/fonts/montserrat-semibold.ttf');  }
+        @font-face {  font-family: 'montserrat-bold';  font-display: swap;  font-style: normal;  font-weight: 400;  src: url('assets/fonts/montserrat-bold.ttf');  }
+        @font-face {  font-family: 'logo-font';  font-display: swap;  font-style: normal;  font-weight: 400;  src: url('assets/fonts/logoFont.otf');  }
+    </style>
+</head>
+<body>
+<header id="header" class="header">
+    <a href="/" style="text-decoration: none">
+        <div class="logo-wrap">
+            <span class="logo-icon"></span>
+            <span class="logo-text">RDI</span>
+        </div>
+    </a>
+    <div class="nav-right">
+        <div class="nav">
+            <a class="nav-item active intro">Home</a>
+            <a class="nav-item service">Service</a>
+            <a class="nav-item pricing">Pricing</a>
+            <a class="nav-item team">ABOUT US</a>
+            <a class="nav-item contact">Contact</a>
+        </div>
+        <div class="language-menu">
+            <span class="language"></span>
+            <ul class="dropdown-list">
+                <li class="dropdown-item">
+                    <a href="/">SR (Srpski)</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="en.html">EN (English)</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#navi" class="navi-trigger">
+            <span class="navi-icon">
+              <svg viewBox="0 0 800 600">
+                  <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                        id="top"></path>
+                  <path d="M300,320 L540,320" id="middle"></path>
+                  <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                        id="bottom"
+                        transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                </svg>
+            </span>
+        </a>
+    </div>
+</header>
+<aside class="sidemenu-wrap">
+    <ul class="sidemenu-list">
+        <li class="nav-item active intro sidemenu-list-item">Home</li>
+        <li class="nav-item service sidemenu-list-item">Service</li>
+        <li class="nav-item pricing sidemenu-list-item">Pricing</li>
+        <li class="nav-item team sidemenu-list-item">ABOUT US</li>
+        <li class="nav-item contact sidemenu-list-item">Contact</li>
+    </ul>
+</aside>
+<section class="section intro" id="intro">
+    <div>
+        <div class="left-side">
+            <h1>Your digital waiter is here!</h1>
+            <p>An application that will make every customer happy.</p>
+            <button class="btn get-started">GET STARTED</button>
+        </div>
+        <div class="right-side"><div class="intro-pic"></div></div>
+        <div class="mouse-icon"><div class="mouse-wheel"></div></div>
+    </div>
+</section>
+<section class="section service" id="service">
+    <div>
+        <div class="headline">
+            <h1>Our Services</h1>
+            <p>Digitalize your business and move one step further from the competition, by orienting to the customers even closer!</p>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="top">
+                    <div class="card-headline">Happier Customers</div>
+                    <div class="card-icon customers"></div>
+                </div>
+                <div class="middle">
+                    Your customers will never wait for long time to be served.
+                    Our ordering system is real-time based and will notify staff in seconds!
+                </div>
+            </div>
+            <div class="card">
+                <div class="top">
+                    <div class="card-headline">Happier Stuff</div>
+                    <div class="card-icon stuff"></div>
+                </div>
+                <div class="middle">
+                    In a cafe or restaurant that uses ORDI application staff is always connected to a customer.
+                    In this way application helps your staff to work more comfortably and put a real smile on their face!
+                </div>
+            </div>
+            <div class="card">
+                <div class="top">
+                    <div class="card-headline">Business monitoring</div>
+                    <div class="card-icon buissnies"></div>
+                </div>
+                <div class="middle">
+                    A Business object owner can access work progress in no time.
+                    Simply sit in a sofa and watch how your money is being earned digitally!
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section pricing" id="pricing">
+    <div>
+        <div class="inner-wrap">
+            <div class="left-side">
+                <h1>Try for free</h1>
+                <h3>Type your email and start using app today!</h3>
+            </div>
+            <div class="right-side">
+                <div class="form-wrap">
+                    <form id="register-company">
+                        <div class="form-field-wrap">
+                            <div class="form-field">
+                                <label for="start">Email</label>
+                                <input id="start" class="custom" type="email" />
+                            </div>
+                        </div>
+                        <div class="form-field-wrap">
+                            <div class="form-field">
+                                <button type="submit" class="btn gradient">Submit</button>
+                                <div class="flex justify-end align-center">
+                                    <p class="font-size-sm text-right">I agree with the privacy policy</p>
+                                    <label style="line-height: 1">
+                                        <input type="checkbox"/>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section team" id="team">
+    <div>
+        <div>
+            <h1 style="text-align: center">What is <span class="accent-text font-bold">ORDI</span> and for whom is it intended?</h1>
+            <p class="font-semibold"><span class="accent-text font-size-m">ORDI</span> is an application designed to
+                restaurants / cafes that want to improve their business and for customers who will finally lose
+                main issues when visiting a catering facility:
+            </p>
+            <ol>
+                <li class="mb24"><i>"Will we finally be served!?"</i></li>
+                <li class="mb24"><i>"When will the waiter pass in order to pay?"</i></li>
+                <li class="mb24"><i>"Confusing menu, I really don't know who will read this with ease!?"</i></li>
+                <li class="mb24"><i>"How they mean "we don't have it", why that's not pointed somewhere!?"</i></li>
+            </ol>
+            <p class="font-semibold">
+                <span class="accent-text font-size-m">ORDI</span> handles this in many ways and we will do our best to help you
+                explained them. So let's get started:
+            </p>
+            <ol>
+                <li class="mb24">
+                    On each table of the catering facility there is a pamphlet with clear indications of where and how the
+                    customer can download application on Google Play store by simply scanning a QR code. After that the
+                    customer chooses whether wants to create an account on the app or simply scan the QR code that can
+                    also be found on pamphlet and the role is to open a personalized menu of the catering facility.
+                </li>
+                <li class="mb24">
+                    The customer has an option on their mobile application &nbsp;<i class="font-semibold">"Call waiter"</i>&nbsp;
+                    which automatically signals to the staff from which table their presence has been requested.
+                    Also next to the option &nbsp;<i class="font-semibold">"Call waiter"</i>&nbsp;there are also options
+                    &nbsp;<i class="font-semibold">"Pay with card"</i>&nbsp; or &nbsp;<i class="font-semibold">"Pay with cash"</i>&nbsp;
+                    which signal to the staff the method of payment chosen by the customer from the given table.
+                </li>
+                <li class="mb24">
+                    The restaurant menu should generally be updated by the staff, if item is missing, the staff has an option
+                    "Hide Item" which will automatically delete the same item from the menu which the customer is looking
+                    at their mobile application. One item in the menu contains, among other things, a name, a picture,
+                    description, size and of course the price, in this way the customer is informed in advance about the
+                    content of the desired item or about any allergens it carries.
+                </li>
+                <li>Our ordering system works in real time so that the moment you choose from the menu what you want
+                    to eat / drink, the staff received a notification of what was ordered and from which table. The waiter then
+                    checks with the chef and bartender on the balance of the ordered items, then informs the customer
+                    via a message as to whether the order has been approved or rejected.
+                </li>
+            </ol>
+        </div>
+        <div class="headline">
+            <h1>Meet The Team</h1>
+            <p>Togather our team has more than 20 years of work experience, regarding that we put an effort to realize our ideas, Ordi is one like that!</p>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="assets/img/vladimir.webp" alt="techa">
+                <div class="card-footer">
+                    <div class="social-actions-bar">
+                        <a href="https://www.facebook.com/wladarix.max" target="_blank" class="soc-icon fb"></a>
+                        <a href="https://www.facebook.com/wladarix.max" target="_blank" class="soc-icon inst"></a>
+                        <a href="https://www.linkedin.com/in/vladimir-dukic-14b5a2100/" target="_blank" class="soc-icon in"></a>
+                    </div>
+                    <h3>Vladimir Dukic</h3>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/nemanja.webp" alt="tihi">
+                <div class="card-footer">
+                    <div class="social-actions-bar">
+                        <a href="https://www.facebook.com/nemanja.radovanovic.31" target="_blank" class="soc-icon fb"></a>
+                        <a href="https://www.instagram.com/nemanja.radovanovic92/" target="_blank" class="soc-icon inst"></a>
+                        <a href="https://www.linkedin.com/in/nemanja-radovanovic-56191ba9/" target="_blank" class="soc-icon in"></a>
+                    </div>
+                    <h3>Nemanja Radovanovic</h3>
+                    <p>Backend && Web Developer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/nikola2.webp" alt="zonsa">
+                <div class="card-footer">
+                    <div class="social-actions-bar">
+                        <a href="https://www.facebook.com/nikola.bojanovic.39" target="_blank" class="soc-icon fb"></a>
+                        <a href="https://www.instagram.com/bojanovicnikola/" target="_blank" class="soc-icon inst"></a>
+                        <a href="https://www.linkedin.com/in/nikolabojanovic/" target="_blank" class="soc-icon in"></a>
+                    </div>
+                    <h3>Nikola Bojanovic</h3>
+                    <p>Backend && Web Developer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/nikola.webp" alt="dakice">
+                <div class="card-footer">
+                    <div class="social-actions-bar">
+                        <a href="https://www.facebook.com/dakicnikola" target="_blank" class="soc-icon fb"></a>
+                        <a href="https://www.instagram.com/second.son_/" target="_blank" class="soc-icon inst"></a>
+                        <a href="https://www.linkedin.com/in/dakicnikola/" target="_blank" class="soc-icon in"></a>
+                    </div>
+                    <h3>Nikola Dakic</h3>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/stevan.webp" alt="beast">
+                <div class="card-footer">
+                    <div class="social-actions-bar">
+                        <a target="_blank" href="https://www.facebook.com/stevan.stojanovic.96" class="soc-icon fb"></a>
+                        <a href="https://www.instagram.com/sstojanovic1993/" class="soc-icon inst"></a>
+                        <a href="https://www.linkedin.com/in/stevan-stojanovic-27337810a/" class="soc-icon in"></a>
+                    </div>
+                    <h3>Stevan Stojanovic</h3>
+                    <p>UI/UX Designer && Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section contact" id="contact">
+    <div class="top">
+        <div class="headline">
+            <h1>
+                <span>Want more information?</span>
+                <span>Write to us</span>
+            </h1>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="form">
+            <form id="contact-form">
+                <div class="form-field-wrap two">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" />
+                    </div>
+                </div>
+                <div class="form-field-wrap">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                </div>
+                <div class="form-field-wrap">
+                    <div class="form-field">
+                        <label for="text">Text</label>
+                        <textarea name="text" id="text" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn block primary outline pbig" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<div class="toast flex">
+    <span role="img" class="toast-icon"></span>
+    <div class="flex flex-column">
+        <span class="toast-header"></span>
+        <span class="toast-body"></span>
+    </div>
+</div>
+<footer class="footer">
+    <section class="footer-inner">
+        <div class="flex flex-wrap footer-section-wrapper align-start">
+            <div class="flex flex-column footer-section">
+                <span class="footer-section-title">Follow Us</span>
+                <div class="social-actions-bar">
+                    <a href="https://www.facebook.com/ordiapp/" target="_blank" class="soc-icon fb"></a>
+                    <a href="https://www.instagram.com/OrdiApp2020/" target="_blank" class="soc-icon inst"></a>
+                    <a href="https://www.linkedin.com/company/ordiappp/" target="_blank" class="soc-icon in"></a>
+                </div>
+            </div>
+            <div class="flex flex-column footer-section">
+                <span class="footer-section-title">Contact</span>
+                <div class="font-size-m info">
+                    <div class="flex pb12">
+                        <span class="pr12">Phone: </span>
+                        <a href="tel:+381 60 3668 619">+381 60 3668 619</a>
+                    </div>
+                    <div class="flex">
+                        <span class="pr12">Email: </span>
+                        <a href="mailto:admin@ordi-app.com">admin@ordi-app.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gp-wrap p24 flex justify-center">
+                <a target="_blank"
+                   href="https://play.google.com/store/apps/details?id=com.petmusketara.ordi"
+                   class="flex align-center googlePlay"
+                >
+                    <span class="gp-icon"></span>
+                    <div class="flex flex-column">
+                        <span class="font-size-sm">GET IT ON</span>
+                        <span class="font-size-l font-bold">Google Play</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex-column flex footer-section align-center">
+            <div id="footerLogo" class="logo-wrap pb24">
+                <span class="logo-icon"></span>
+                <span class="logo-text">RDI</span>
+            </div>
+            <div class="footer-text">
+                ORDI © 2020, all rights reserved.
+                <a target="_blank" href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
